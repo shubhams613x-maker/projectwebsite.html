@@ -1,0 +1,36 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    background-color: brown;
+
+
+}
+
+.navbar img {
+
+
+    width: 50px;
+    height: 50px;
+
+
+}
+
+.ul-list li {
+
+    display: flex;
+    padding: 0px 15px;
+    margin-left: 90px;
+
+
+}
+
+.man button {
+
+    background-color: red;
+    color: white;
+    padding: 8px 40px;
+
+}

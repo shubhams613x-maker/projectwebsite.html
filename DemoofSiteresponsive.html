@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (min-width:768px) {
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+        .navbar {
+            background-image: url("images/bg for navbar.jpg");
+            display: flex;
+            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar img {
+
+            width: 60px;
+            height: 60px;
+        }
+
+        ul {
+            display: flex;
+
+            margin-left: 680px;
+        }
+
+        li {
+            list-style: none;
+            padding: 0% 40px;
+            color: white;
+        }
+
+        a {
+
+
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+
+            background-color: red;
+            padding: 8px 50px;
+            border: none;
+        }
+
+        .second-header {
+            display: flex;
+            justify-content: space-around;
+            background-image: url("images/bg middle.jpg");
+            align-items: center;
+        }
+
+        .image-section img {
+            padding: 15px;
+            align-items: center;
+            width: 550px;
+            height: 500px;
+            justify-content: space-around;
+        }
+
+        .heading-section {
+            text-align: center;
+        }
+
+        .heading-section h1 {
+            padding: 0px 160px;
+            color: rgb(165, 154, 154);
+        }
+
+        .heading-section img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .heading-section p {
+            color: white;
+            padding: 0px 250px;
+            color: rgb(171, 93, 93);
+        }
+
+        .last-footer {
+            display: flex;
+            background-image: url("images/bg of footer.jpg");
+            left: 0%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            justify-content: space-around;
+        }
+
+        .heading {
+            text-align: center;
+            margin-left: 100px;
+            color: rgb(171, 93, 93);
+        }
+
+        .heading p {
+            padding: 0% 250px;
+            color: rgb(165, 154, 154);
+        }
+
+        .adress h2 {
+
+            color: rgb(171, 93, 93);
+        }
+
+        .adress p {
+            color: rgb(165, 154, 154);
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        @media screen and (min-width:320px) and (max-width:767px) {
+
+
+
+            .navbar {
+                width: 100%;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-image: url("images/bg for navbar.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .navbar img {
+                width: 100%;
+                height: auto;
+                display: block;
+                padding: 12px;
+                margin: auto;
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                text-align: center;
+                align-items: center;
+                align-self: center;
+            }
+
+            li {
+                width: 100%;
+                padding: 15px;
+                border-bottom: 1px dotted #000;
+                color: #fff;
+                align-items: center;
+            }
+
+            button {
+                padding: 10px 30px;
+                background: #fb2056;
+                color: #fff;
+                border: none;
+                border-radius: 30px;
+                margin: 15px auto;
+                display: block;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+
+        .header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+
+            background: green;
+            color: #eea3a3;
+
+            border: 5px solid currentColor;
+            border-image: url("images/bg for navbar.jpg") 20 round;
+        }
+
+        .second-header img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .heading-section h1 {
+            font-size: 22px;
+            margin: 8px 10px;
+            color: white;
+        }
+
+        .heading-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 8px 10px;
+            color: white;
+        }
+
+        .heading-section img {
+
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            background-image: url("images/bg of footer.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="images/navi logo.jpg" alt="">
+        <ul>
+            <li><a
+                    href="https://www.bing.com/ck/a?!&&p=8964b517e13fea9673d437380f782b76db50894bae66c5bf53f4e6cf95ea5ffcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=22734824-b7ea-6f6d-0e7e-5f61b6ec6e76&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUlO">Home</a>
+            </li>
+            <li><a
+                    href="https://www.bing.com/ck/a?!&&p=8964b517e13fea9673d437380f782b76db50894bae66c5bf53f4e6cf95ea5ffcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=22734824-b7ea-6f6d-0e7e-5f61b6ec6e76&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUlO">Contact</a>
+            </li>
+            <li><a
+                    href="https://www.bing.com/ck/a?!&&p=8964b517e13fea9673d437380f782b76db50894bae66c5bf53f4e6cf95ea5ffcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=22734824-b7ea-6f6d-0e7e-5f61b6ec6e76&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUlO">Information</a>
+            </li>
+            <li><a
+                    href="https://www.bing.com/ck/a?!&&p=8964b517e13fea9673d437380f782b76db50894bae66c5bf53f4e6cf95ea5ffcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=22734824-b7ea-6f6d-0e7e-5f61b6ec6e76&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUlO">Share</a>
+            </li>
+        </ul>
+        <button class="title"><a
+                href="https://www.bing.com/search?q=whatsapp+web&gs_lcrp=EgRlZGdlKgcIARBFGMIDMgcIABBFGLABMgcIARBFGMIDMgcIAhBFGMIDMgcIAxBFGMIDMgcIBBBFGMIDMgcIBRBFGMIDMgcIBhBFGMIDMgcIBxBFGMID0gENNjg5MzQxODIyajBqN6gCCLACAQ&FORM=ANSPA1&PC=HCTS">click</a></button>
+    </nav>
+
+
+
+    <div class="header">
+        <div class="second-header">
+            <div class="image-section">
+                <img src="images/center img.jpg" alt="">
+
+            </div>
+
+
+
+            <div class="heading-section">
+                <h1>shubham is a Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <img src="images/logo bootstrap.jpg" alt="">
+                <p> Provident tempora sint nobis incidunt obcaecati deserunt praesentium doloremque,
+                    placeat sit! Corrupti non nostrum ea voluptatem voluptate alia</p>
+                <button><a
+                        href="https://www.bing.com/ck/a?!&&p=8964b517e13fea9673d437380f782b76db50894bae66c5bf53f4e6cf95ea5ffcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=22734824-b7ea-6f6d-0e7e-5f61b6ec6e76&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUlO">Click</a></button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="last-footer">
+            <div class="adress">
+                <h2><i></i> Revolution Street Paris, France</h2>
+                <h3>+1 555 123456</h3>
+                <h4><mark>support@company.com</mark></h4>
+
+            </div>
+            <div class="heading">
+                <h1>About The company</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Maiores, nostrum itaque! Eius accusant</p>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

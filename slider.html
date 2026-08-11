@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .testimonial-section {
+
+            max-width: 100%;
+            margin: auto;
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        .tag {
+
+            display: inline-block;
+            padding: 12px 25px;
+            background: #fff;
+            border-radius: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+            font-weight: 600;
+            color: #21304d;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+
+            font-size: 56px;
+            margin-bottom: 60px;
+            color: #1e2b44;
+            font-weight: 700;
+        }
+
+        .carousel {
+
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .slider {
+
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .cards {
+
+            display: flex;
+            gap: 30px;
+            transition: .5s;
+        }
+
+        .card {
+
+            min-width: calc(25% - 23px);
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+            height: 450px;
+            flex-shrink: 0;
+        }
+
+        .card video {
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-btn {
+
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 55px;
+            height: 55px;
+            border: none;
+            border-radius: 50%;
+            /*background:rgba(255,255,255,.8);*/
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .overlay {
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 25px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, .85));
+            color: #fff;
+            text-align: left;
+        }
+
+        .overlay h3 {
+
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .overlay p {
+
+            font-size: 15px;
+            opacity: .85;
+        }
+
+        .nav {
+
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+            cursor: pointer;
+            font-size: 22px;
+            margin: 0 15px;
+            z-index: 20;
+        }
+
+        .nav:hover {
+
+            background: #0d6efd;
+            color: #fff;
+        }
+
+        @media(max-width:991px) {
+
+            .card {
+
+                min-width: calc(50% - 15px);
+
+            }
+
+            h2 {
+
+                font-size: 42px;
+
+            }
+
+        }
+
+        @media(max-width:600px) {
+
+            .card {
+
+                min-width: 100%;
+
+            }
+
+            h2 {
+
+                font-size: 32px;
+
+            }
+
+            .nav {
+
+                display: none;
+
+            }
+
+        }
+    </style>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonials Carousel</title>
+
+
+    </head>
+
+    <body>
+
+        <section class="testimonial-section">
+
+            <span class="tag">Client Testimonials</span>
+
+            <h2>Happy Clients Testimonials</h2>
+
+            <div class="carousel">
+
+                <button class="nav prev">&#10094;</button>
+
+                <div class="slider">
+
+                    <div class="cards">
+
+                        <!-- Card -->
+                        <div class="card">
+                            <video poster="images/client1.jpg">
+                                <source src="videos/video1.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Muktesh Narula</h3>
+                                <p>DOVESOFT</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <video poster="images/client1.jpg">
+                                <source src="videos/video1.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Muktesh Narula</h3>
+                                <p>DOVESOFT</p>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="card">
+                            <video poster="images/client2.jpg">
+                                <source src="videos/video2.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Shriya Sadneni</h3>
+                                <p>MURZBAN</p>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="card">
+                            <video poster="images/client3.jpg">
+                                <source src="videos/video3.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Yash Goswami</h3>
+                                <p>BITEBEE FOUNDER</p>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="card">
+                            <video poster="images/client4.jpg">
+                                <source src="videos/video4.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Ajay Agarwal</h3>
+                                <p>AVEENA CO-FOUNDER</p>
+                            </div>
+                        </div>
+
+                        <!-- More cards -->
+                        <div class="card">
+                            <video poster="images/client5.jpg">
+                                <source src="videos/video5.mp4" type="video/mp4">
+                            </video>
+
+                            <button class="play-btn">&#9658;</button>
+
+                            <div class="overlay">
+                                <h3>Client Name</h3>
+                                <p>Company</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="nav next">&#10095;</button>
+
+            </div>
+
+        </section>
+
+        <script>
+
+
+            const cards = document.querySelector(".cards");
+            const next = document.querySelector(".next");
+            const prev = document.querySelector(".prev");
+
+            let index = 0;
+
+            function visibleCards() {
+
+                if (window.innerWidth < 600) return 1;
+
+                if (window.innerWidth < 992) return 2;
+
+                return 4;
+
+            }
+
+            function moveSlider() {
+
+                const card = document.querySelector(".card");
+
+                const gap = 30;
+
+                const width = card.offsetWidth + gap;
+
+                cards.style.transform = `translateX(-${index * width}px)`;
+
+            }
+
+            next.addEventListener("click", () => {
+
+                const total = document.querySelectorAll(".card").length;
+
+                const show = visibleCards();
+
+                if (index < total - show) {
+
+                    index++;
+
+                } else {
+
+                    index = 0;
+
+                }
+
+                moveSlider();
+
+            });
+
+            prev.addEventListener("click", () => {
+
+                const total = document.querySelectorAll(".card").length;
+
+                const show = visibleCards();
+
+                if (index > 0) {
+
+                    index--;
+
+                } else {
+
+                    index = total - show;
+
+                }
+
+                moveSlider();
+
+            });
+
+            window.addEventListener("resize", moveSlider);
+
+            moveSlider();
+
+
+
+            // Video Play on Hover
+
+            document.querySelectorAll(".card").forEach(card => {
+
+                const video = card.querySelector("video");
+
+                const btn = card.querySelector(".play-btn");
+
+                card.addEventListener("mouseenter", () => {
+
+                    video.play();
+
+                    btn.innerHTML = "❚❚";
+
+                });
+
+                card.addEventListener("mouseleave", () => {
+
+                    video.pause();
+
+                    video.currentTime = 0;
+
+                    btn.innerHTML = "►";
+
+                });
+
+                // Manual click bhi kaam karega (mobile/touch devices ke liye)
+
+                btn.addEventListener("click", (e) => {
+
+                    e.stopPropagation();
+
+                    document.querySelectorAll("video").forEach(v => {
+
+                        if (v !== video) {
+
+                            v.pause();
+
+                            v.currentTime = 0;
+
+                        }
+
+                    });
+
+                    document.querySelectorAll(".play-btn").forEach(b => {
+
+                        if (b !== btn) {
+
+                            b.innerHTML = "►";
+
+                        }
+
+                    });
+
+                    if (video.paused) {
+
+                        video.play();
+
+                        btn.innerHTML = "❚❚";
+
+                    }
+                    else {
+
+                        video.pause();
+
+                        btn.innerHTML = "►";
+
+                    }
+
+                });
+
+            });
+        </script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+</html>

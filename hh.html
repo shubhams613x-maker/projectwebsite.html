@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+
+            display: flex;
+            background-color: blue;
+            position: fixed;
+            justify-content: space-around;
+            align-items: center;
+
+
+
+
+        }
+
+        .navbar img {
+            height: 190px;
+            width: 190px;
+        }
+
+        .type {
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+            display: flex;
+            color: white;
+            justify-content: center;
+            list-style: none;
+            font-weight: bold;
+
+            font-style: oblique;
+
+
+
+        }
+
+        .type:hover {
+            background-color: black;
+
+        }
+
+        .type li {
+            padding-left: 80px;
+
+        }
+
+        .b {
+            background-color: wheat;
+            color: black;
+            width: 180px;
+            height: 50px;
+            border: none;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .sub-heading {
+            position: sticky;
+            top: 0px;
+            background-color: #2196f3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .content {
+            height: 1500px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="images/pizza time.png" alt="">
+        <ul class="type">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Name</li>
+            <li>None</li>
+        </ul>
+
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat debitis expedita error consequuntur repellat, fugiat repellendus nemo! Magni modi aliquam 
+            aut quibusdam dolores ratione cumque excepturi quaerat blanditiis consectetur.
+         </p>
+    
+        <button class="b">click this button</button>
+    </nav>
+
+    <div class="sub-heading">
+        <h1>CONTACT ABOUT US</h1>
+    </div>
+
+    <div class="content">
+        <p>Scroll down to see the sticky effect.</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+</body>
+
+</html>

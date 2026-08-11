@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #2196F3;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .navbar li {
+        list-style-type: circle;
+        list-style-position: inside;
+    }
+
+    .type {
+        display: flex;
+        font-size: x-large;
+        justify-content: center;
+        list-style: none;
+        font-weight: bold;
+        gap: 27px;
+        font-style: oblique;
+        color: white;
+    }
+
+    .navbar img {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .nom1 {
+
+        padding: 8px 29px;
+        background-color: #ff0101;
+    }
+
+
+    .second-header {
+        display: flex;
+    }
+
+    .second-header img {
+
+        width: 500px;
+        height: 500px;
+    }
+
+    .heading-section {
+        padding: 96px 20px;
+        justify-content: space-around;
+    }
+
+    .nom {
+        display: flex;
+        justify-content: center;
+    }
+
+    .om {
+        margin-left: 50px;
+
+    }
+
+    .nom button {
+        background-color: rgb(241, 19, 19);
+
+
+        color: white;
+    }
+
+    .sub-heading {
+        position: sticky;
+        top: 0px;
+        background-color: #2196F3;
+        color: rgb(0, 0, 0);
+        padding: 15px;
+        text-align: center;
+    }
+
+    .second-header {
+        display: flex;
+        max-width: 1300px;
+        justify-content: center;
+        padding: 40px 80px;
+        margin: auto;
+
+    }
+
+    .ima-section img {
+
+        width: 390px;
+        height: 380px;
+        margin-left: 280px;
+    }
+
+    .li {
+        margin-left: 100px;
+    }
+
+    .navbar li {
+        font-style: italic;
+    }
+
+    .bottom {
+        background-color: grey;
+
+        padding: 98px 80px;
+    }
+
+    .image-section {
+        width: 50%;
+    }
+
+    .second-header img {
+        width: 100%;
+        height: 500px;
+        max-width: 500px;
+    }
+
+    .heading-section {
+        width: 47%;
+
+    }
+
+    .second-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form input {
+        padding: 10px 100px;
+        border: none;
+        border-radius: 5px;
+        background-color: darkgray;
+    }
+
+    form label {
+        color: whitesmoke;
+        font-family: sans-serif;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    button {
+        background-color: red;
+        color: white;
+        padding: 8px 29px;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+    }
+
+    .para p {
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .heading-section h1 {
+        text-align: center;
+    }
+
+    .nom {
+        padding-top: 10px;
+    }
+</style>
+
+<body>
+
+    <marquee behavior="slow" direction="right">
+        <h1 style="color: rgb(0, 0, 0);">Dial Karo</h1>
+    </marquee>
+    <nav class="navbar">
+        <img src="images/bootstrap.png" alt="">
+        <ul class="type">
+            <li>Index</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>About</li>
+        </ul>
+        <button class="nom1"><a href="https://www.youtube.com/">click</a></button>
+
+    </nav>
+
+
+
+    <div class="header">
+        <div class="second-header">
+            <div class="image-section">
+                <img src="images/pizza time.png" alt="">
+            </div>
+
+
+            <div class="heading-section">
+                <h1>Webpages automatically adjust their layout to look stunning on all screen sizes, from mobile
+                    phones
+                    to large desktops.</h1>
+
+                <div class="para">
+                    <p> automatically adjust their layout to look stunning on all screen sizes,
+                        from mobile phones to <mark>large desktops.Webpages </mark>automatically adjust their layout to
+                        look
+                        stunning
+                        on all screen sizes,
+                        from mobile phones to large desktops. </p>
+                </div>
+                <div class="nom">
+                    <div class="you">
+                        <button>click</button>
+                    </div>
+                    <div class="om">
+                        <button>click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sub-heading">
+            <h1>CONTACT ABOUT US</h1>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="second-section">
+            <div class="Contact-form">
+                <form>
+                    <label for="fname">NAME</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+
+                    <label for="fname">CONTACT</label><br>
+                    <input type="email" id="fname" name="fname"><br><br>
+
+                    <label for="fname">BIO</label><br>
+                    <input type="email" id="fname" name="fname"><br><br>
+                    <button type="SUBMIT" formaction="https://dialkro.in/">submit</button>
+                </form>
+            </div>
+
+
+            <div class="ima-section">
+                <img src="images/form img.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

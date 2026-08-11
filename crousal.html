@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Categories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    body {
+        background: #f7f7f7;
+    }
+
+    .category-section {
+        width: 60%;
+        padding: 160px 0;
+        margin-left: 420px;
+    }
+
+    .category-section h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .marquee {
+        overflow: hidden;
+        width: 100%;
+        margin: 18px 0;
+    }
+
+    .track {
+        display: flex;
+        width: max-content;
+        gap: 18px;
+    }
+
+    .left .track {
+        animation: scrollLeft 25s linear infinite;
+    }
+
+    .right .track {
+        animation: scrollRight 25s linear infinite;
+    }
+
+    .card {
+
+        min-width: 300px;
+        height: 110px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transition: .3s;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .card:hover {
+
+        transform: translateY(-8px);
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+
+    }
+
+    .card img {
+
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+
+    }
+
+    .card span {
+
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+
+    @keyframes scrollLeft {
+
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+
+    }
+
+    @keyframes scrollRight {
+
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+
+    }
+
+
+
+    .category-slider {
+        position: relative;
+        width: 100%;
+    }
+
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .6);
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 999;
+        transition: .3s;
+    }
+
+    .slider-btn:hover {
+        background: #000;
+    }
+
+    .prev {
+        left: 280px;
+    }
+
+    .next {
+        right: 190px;
+    }
+</style>
+
+<body>
+
+    <section class="category-section">
+        <button class="slider-btn prev">&#10094;</button>
+
+        <h2>25+ Categories</h2>
+
+        <!-- Row 1 -->
+        <div class="marquee left">
+            <div class="track">
+
+                <!-- Repeat these cards -->
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Electricity</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Recharge</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Insurance</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>DTH</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Education</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>LPG</span>
+                </div>
+
+                <!-- Duplicate -->
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Electricity</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Recharge</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Insurance</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>DTH</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Education</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>LPG</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Row 2 -->
+        <div class="marquee right">
+            <div class="track">
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Mobile</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Loan</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>FASTag</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Gas</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Water</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Broadband</span>
+                </div>
+
+                <!-- Duplicate -->
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Mobile</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Loan</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>FASTag</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Gas</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Water</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Broadband</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Row 3 -->
+        <div class="marquee left">
+            <div class="track">
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Donation</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Metro</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Municipal</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Credit Card</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>eChallan</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Housing</span>
+                </div>
+
+                <!-- Duplicate -->
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Donation</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Metro</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Municipal</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Credit Card</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>eChallan</span>
+                </div>
+
+                <div class="card">
+                    <img src="logo.png">
+                    <span>Housing</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <button class="slider-btn next">&#10095;</button>
+
+    <script>
+        document.querySelectorAll(".track").forEach(track => {
+            track.innerHTML += track.innerHTML;
+        });    
+    </script>
+
+
+</body>
+
+</html>
